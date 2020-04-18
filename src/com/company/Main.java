@@ -1,4 +1,3 @@
-
 package com.company;
 
 public class Main {
@@ -6,19 +5,25 @@ public class Main {
     public static void main(String[] args) {
 
         Animal dog = new Animal("Dog");
+        dog.name = "Hacia";
 
-        dog.name="Haiko";
-
-        System.out.println("I am "+dog.name);
+        System.out.println("Hi, I'm " + dog.name);
 
         dog.feed();
-        dog.feed();
-        dog.feed();
-
 
         Human me = new Human();
-        me.firstName="Karol";
-        me.lastName="Glaza";
+        me.firstName = "Karol";
+        me.lastName = "Glaza";
         me.pet = dog;
+
+        me.pet.feed();
+        System.out.println(me.pet.species);
+
+        me.pet = new Animal("Lion");
+        me.pet.name = "Myszojeleń";
+
+        me.pet.feed();
+
+        System.out.println(me.pet.species);
     }
 }
