@@ -29,10 +29,17 @@ public class Main {
         Animal cat = new Animal("cat");
         cat.feed();
 
-        for (int i = 0; i < 52; i++)
-        {
-            cat.takeForAWalk();
-        }
+       // for (int i = 0; i < 52; i++)
+       // {
+       //     cat.takeForAWalk();
+       // }
+
+        Car car = new Car("Astra", "Opel");
+        car.engineSize = 1.5;
+        car.liczbaKoni = 138;
+        car.kolor = "zielony";
+
+        me.car = car;
 
 
     }
