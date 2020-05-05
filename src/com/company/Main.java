@@ -44,7 +44,7 @@ public class Main {
 
         me.setSalary(2600.0);
         System.out.println(me.getSalary());
-        me.setSalary(3000.0);
+        me.setSalary(-3000.0);
         System.out.println(me.getSalary());
 
 

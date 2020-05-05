@@ -18,7 +18,6 @@ public class Human {
     public void setSalary(Double salary) {
         if (salary < 0) {
             System.out.println("Uwaga! Pensja nie może być niższa niż 0!");
-            throw new IllegalArgumentException();
 
         } else if (salary == null) {
             double a = 2600.00;
