@@ -1,4 +1,4 @@
-package com.company;
+package com.company.devices;
 
 public class Car {
     Integer liczbaKoni;
@@ -6,7 +6,7 @@ public class Car {
     String model;
     String producent;
     Integer year;
-    Double price;
+    public Double price;
 
     public Car(String model, String producent, Integer year, String kolor, Integer liczbaKoni, Double price) {
         this.model = model;
@@ -15,6 +15,9 @@ public class Car {
         this.liczbaKoni = liczbaKoni;
         this.year = year;
         this.price = price;
+    }
+    public String toString(){
+        return producent + " " + model + " " + kolor + " " + liczbaKoni + " " + year + " " + price;
     }
 
     public Object clone() {

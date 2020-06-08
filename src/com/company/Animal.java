@@ -14,8 +14,9 @@ public class Animal {
     static final Double DEFAULT_LION_WEIGHT = 30.0;
     static final Double DEFAULT_OTHER_WEIGHT = 5.0;
 
-    public Animal(String species) {
+    public Animal(String species, String name) {
         this.species = species;
+        this.name = name;
         if (species.equals("Dog")) {
             weight = DEFAULT_DOG_WEIGHT;
         } else if (species.equals("Lion")) {
@@ -50,5 +51,8 @@ public class Animal {
         void die() {
             System.out.println("Your pet died!");
             this.is_dead = true;
+        }
+        public String toString() {
+        return species + " " + name;
         }
     }
